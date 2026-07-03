@@ -1,0 +1,23 @@
+@theme {
+    /* Backgrounds */
+    --color-background: #0c0c0d;
+    --color-surface: #161618;
+    --color-card: #1d1d20;
+
+    /* Typography */
+    --color-text: #f5f3ef;
+    --color-text-muted: #a1a1aa;
+
+    /* Accent */
+    --color-primary: #d4a373;
+    --color-secondary: #8aa29e;
+
+    /* Borders */
+    --color-border: rgba(255, 255, 255, 0.08);
+
+    /* Radius */
+    --radius-card: 24px;
+
+    /* Shadows */
+    --shadow-card: 0 10px 30px rgba(0, 0, 0, .25);
+}
