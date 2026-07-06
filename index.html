@@ -1,16 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio-v2</title>
+  <title>Abdul Rehman Choudhry — Backend Engineer</title>
+  <meta name="description"
+    content="Abdul Rehman Choudhry — Computer Engineering student, Java-focused backend developer. Class of 2027." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- INTRO SPLASH -->
+  <!-- INTRO -->
+  <div id="splash">
+    <img id="splashLogo" src="arc-logo.png" alt="ARC Logo">
+  </div>
+
+  <noscript>
+    <style>
+      .splash {
+        display: none;
+      }
+    </style>
+  </noscript>
+
+  <div class="stripe-top" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="logo-mark" id="navLogo" aria-label="Abdul Rehman Choudhry — home">
+        <img src="arc-logo.png" alt="ARC" class="nav-logo-img" />
+      </a>
+
+      <div class="nav-links">
+        <a href="#garage">Garage</a>
+        <a href="#profile">Profile</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#pitwall">Contact</a>
+      </div>
+
+      <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">
+        <span>Resume</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2 6H10M10 6L6.5 2.5M10 6L6.5 9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#garage">Garage</a>
+      <a href="#profile">Profile</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#pitwall">Contact</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="chevrons"></div>
+      </div>
+
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Computer Engineering · Java Backend · Class of 2027</p>
+
+        <h1 class="hero-name">
+          <span class="line">ABDUL REHMAN</span>
+          <span class="line accent-text">CHOUDHRY</span>
+        </h1>
+
+        <div class="hero-sub-row">
+          <p class="hero-role">Backend Developer <span class="sep">/</span> Java-Focused Engineer</p>
+          <p class="hero-tagline">Computer Engineering student passionate about backend development, cloud technologies,
+            and building software that is
+            clean, scalable, and purposeful.</p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#garage" class="btn btn-primary">
+            <span>Enter the Garage</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#pitwall" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="profile.jpeg" alt="Portrait of Abdul Rehman Choudhry" />
+        </div>
+      </div>
+    </header>
+
+    <!-- TELEMETRY STRIP -->
+    <section class="telemetry" aria-label="Quick stats">
+      <div class="telemetry-track">
+        <div class="telemetry-set">
+          <span class="t-item">4TH YEAR — B.E. COMPUTER ENGINEERING</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">JAVA · SPRING BOOT · SQL</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">5 PROJECTS SHIPPED</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">AWS · EC2 · S3 · ELASTIC BEANSTALK</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">1 PUBLISHED RESEARCH PAPER</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">GRADUATING 2027</span>
+          <span class="t-dot">●</span>
+        </div>
+        <div class="telemetry-set" aria-hidden="true">
+          <span class="t-item">4TH YEAR — B.E. COMPUTER ENGINEERING</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">JAVA · SPRING BOOT · SQL</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">5 PROJECTS SHIPPED</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">AWS · EC2 · S3 · ELASTIC BEANSTALK</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">2 PUBLISHED RESEARCH PAPERS</span>
+          <span class="t-dot">●</span>
+          <span class="t-item">GRADUATING 2027</span>
+          <span class="t-dot">●</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE / ABOUT -->
+    <section class="section profile-section" id="profile">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">01 — PROFILE</p>
+        <h2> Stats</h2>
+      </div>
+
+      <div class="profile-grid">
+        <div class="profile-copy reveal">
+          <p>
+            I'm a fourth-year Computer Engineering student who cares more about fundamentals than trends
+            clean logic, reliable systems, and actually understanding what's happening under the hood
+            instead of just making things "work."
+          </p>
+          <p>
+            Java is where I'm strongest, and backend development is where I want to build my career.
+            Most of my time outside coursework goes into shipping practical projects: REST APIs with
+            real validation and error handling, systems that solve problems people actually have, and
+            the occasional detour into research when a project earns it.
+          </p>
+          <p>
+            Right now I'm preparing for internships, deepening my Spring Boot and AWS skillset, and
+            treating every build like a lap that should be faster and cleaner than the last one.
+          </p>
+        </div>
+
+        <div class="spec-card reveal">
+          <div class="spec-row">
+            <span class="spec-label mono">NAME</span>
+            <span class="spec-value">Abdul Rehman Choudhry</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">FOCUS</span>
+            <span class="spec-value">Backend Engineering</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">PRIMARY STACK</span>
+            <span class="spec-value">Java · Spring Boot · SQL</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">COLLEGE</span>
+            <span class="spec-value">Rizvi College of Engineering</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">UNIVERSITY</span>
+            <span class="spec-value">Mumbai University</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">CGPA</span>
+            <span class="spec-value">8.37</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label mono">GRADUATION</span>
+            <span class="spec-value">2027</span>
+          </div>
+          <div class="spec-row last">
+            <span class="spec-label mono">STATUS</span>
+            <span class="spec-value status-live"><span class="pulse"></span>Open to internships</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GARAGE / PROJECTS -->
+    <section class="section garage-section" id="garage">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">02 — THE GARAGE</p>
+        <h2>Builds &amp; Projects</h2>
+        <p class="section-desc">Five builds, in the order I'd walk you through them — from backend-first APIs to the
+          small tools I built just to solve my own problems.</p>
+      </div>
+
+      <div class="garage-grid">
+
+        <article class="build-card build-flagship reveal">
+          <div class="build-top">
+            <span class="build-index mono">01</span>
+            <span class="build-badge">Published Research</span>
+          </div>
+          <h3>Food Donation &amp; Redistribution Platform</h3>
+          <p>A platform connecting food donors directly with NGOs and volunteers — donor registration, scheduling, and
+            live tracking — aimed at cutting food wastage and improving redistribution efficiency by an estimated 40%.
+          </p>
+          <div class="build-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">System Design</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <div class="build-links">
+            <a href="https://github.com/AbdulRehmanChoudhry/Food-Donation-and-Redistribution-Platform" target="_blank"
+              rel="noopener">View source ↗</a>
+          </div>
+        </article>
+
+        <article class="build-card reveal">
+          <div class="build-top">
+            <span class="build-index mono">02</span>
+            <span class="build-badge">Spring Boot</span>
+          </div>
+          <h3>Student Management REST API</h3>
+          <p>A production-style API with layered architecture, DTO validation, global exception handling, pagination,
+            sorting, and dynamic filtering via JPA Specifications — documented end-to-end with Swagger/OpenAPI.</p>
+          <div class="build-tags">
+            <span class="tag">Java 21</span>
+            <span class="tag">Spring Boot 3</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="build-links">
+            <a href="https://github.com/AbdulRehmanChoudhry/student-management-api" target="_blank" rel="noopener">View
+              source ↗</a>
+          </div>
+        </article>
+
+        <article class="build-card reveal">
+          <div class="build-top">
+            <span class="build-index mono">03</span>
+            <span class="build-badge">Published Research</span>
+          </div>
+          <h3>Digital Signage System</h3>
+          <p>A web-based dynamic signage system turning ordinary TVs into smart displays, with real-time uploads of
+            photos, videos, and text — a 60% improvement in content delivery over static displays. Findings published in
+            the IJRAR journal.</p>
+          <div class="build-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <div class="build-links">
+            <a href="https://github.com/AbdulRehmanChoudhry/Digital-Signage-System" target="_blank" rel="noopener">View
+              source ↗</a>
+          </div>
+        </article>
+
+        <article class="build-card reveal">
+          <div class="build-top">
+            <span class="build-index mono">04</span>
+            <span class="build-badge">Personal Tool</span>
+          </div>
+          <h3>Water Hydration Calculator</h3>
+          <p>A small utility that calculates daily water intake targets based on body weight and activity level — built
+            to scratch a personal itch and keep front-end fundamentals sharp between backend-heavy projects.</p>
+          <div class="build-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </article>
+
+        <article class="build-card reveal">
+          <div class="build-top">
+            <span class="build-index mono">05</span>
+            <span class="build-badge">Web</span>
+          </div>
+          <h3>Wedding Website</h3>
+          <p>A clean, responsive site built to manage event information and guest communication — proof that solid
+            fundamentals scale down as well as up, no framework required.</p>
+          <div class="build-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TOOLKIT / SKILLS -->
+    <section class="section toolkit-section" id="toolkit">
+      <div class="section-head reveal">
+        <p class="eyebrow mono">03 — THE TOOLKIT</p>
+        <h2>What I Build With</h2>
+      </div>
+
+      <div class="toolkit-grid">
+        <div class="toolkit-block reveal">
+          <h3><span class="toolkit-num mono">/01</span>Languages</h3>
+          <ul>
+            <li><span>Java</span><span class="bar"><i style="--level:95%"></i></span></li>
+            <li><span>SQL</span><span class="bar"><i style="--level:80%"></i></span></li>
+            <li><span>Python</span><span class="bar"><i style="--level:65%"></i></span></li>
+            <li><span>C</span><span class="bar"><i style="--level:70%"></i></span></li>
+            <li><span>JavaScript</span><span class="bar"><i style="--level:60%"></i></span></li>
+          </ul>
+        </div>
+
+        <div class="toolkit-block reveal">
+          <h3><span class="toolkit-num mono">/02</span>Core Knowledge</h3>
+          <ul class="plain-list">
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Object-Oriented Programming</li>
+            <li>Backend Fundamentals &amp; REST APIs</li>
+            <li>Networking</li>
+          </ul>
+        </div>
+
+        <div class="toolkit-block reveal">
+          <h3><span class="toolkit-num mono">/03</span>Tools &amp; Platforms</h3>
+          <ul class="plain-list">
+            <li>Spring Boot · Spring Data JPA</li>
+            <li>MySQL · PostgreSQL</li>
+            <li>AWS — EC2, S3, Elastic Beanstalk</li>
+            <li>Git &amp; GitHub · Docker</li>
+            <li>VS Code · Apache NetBeans</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIT WALL / CONTACT -->
+    <section class="section pitwall-section" id="pitwall">
+      <div class="pitwall-inner reveal">
+        <p class="eyebrow mono">04 — PIT WALL</p>
+        <h2>Let's talk backend.</h2>
+        <p class="pitwall-desc">Open to internships and backend-focused opportunities. Reach out, I read every message.
+        </p>
+
+        <a class="email-link" href="mailto:abdulrehmanchowdhry@gmail.com">abdulrehmanchowdhry@gmail.com</a>
+
+        <div class="pitwall-links">
+          <a href="https://github.com/AbdulRehmanChoudhry" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/abdul-rehman-choudhry/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="tel:+917506880577">+91 75068 80577</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Abdul Rehman Choudhry — Building the future, one step at a time.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
